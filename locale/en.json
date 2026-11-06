@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Turn cost footer",
+    "description": "Shows this turn's cost in CNY, plus today's running total, after the clock in each completed assistant footer."
+  }
+}

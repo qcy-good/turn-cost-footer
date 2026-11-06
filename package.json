@@ -1,0 +1,42 @@
+{
+  "name": "turn-cost-footer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Shows each assistant turn's real CNY cost and the running total for today in the completed-turn footer of DeepSeek Harness.",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "cost", "usage", "token"],
+  "license": "MIT",
+  "author": "qcy-good",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qcy-good/turn-cost-footer.git"
+  },
+  "homepage": "https://github.com/qcy-good/turn-cost-footer#readme",
+  "bugs": {
+    "url": "https://github.com/qcy-good/turn-cost-footer/issues"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "screenshots.json",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

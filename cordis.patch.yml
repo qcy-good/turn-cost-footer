@@ -1,0 +1,25 @@
+# Mount the turn-cost-footer bundle in this profile.
+# Toggle: set `enabled: false` below (Client hides every chip and stops inserting),
+# or disable the whole row with the plugin manager.
+- insert:
+    - id: turn-cost-footer
+      name: turn-cost-footer
+      config:
+        enabled: true
+        showToday: true
+        currency: CNY
+        # Peak hours are Beijing local time; peak price = valley price * peakMultiplier.
+        peakHours: [[9, 12], [14, 18]]
+        peakMultiplier: 2
+        weekendValley: true
+        # CNY per million tokens. Longest matching key wins, `default` is the fallback.
+        prices:
+          default:
+            cacheHit: 0.02
+            cacheMiss: 1
+            output: 4
+          deepseek-v4-pro:
+            cacheHit: 0.15
+            cacheMiss: 4.5
+            output: 13.5
+        debug: false

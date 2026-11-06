@@ -1,0 +1,12 @@
+# 提交给 awesome-dsh-plugin 的条目，PR 时放到仓库的：
+#   data/plugins/qcy-good__turn-cost-footer.yml
+# 文件名必须严格等于 URL 的 slug（owner__repo.yml）。
+
+url: https://github.com/qcy-good/turn-cost-footer
+name: qcy-good/turn-cost-footer
+category: usage
+description:
+  en: 'Adds the real cost of each assistant turn, plus the running total for today, to the completed-turn footer of DeepSeek Harness. Amounts are folded from the session log with a local CNY price table: no billing API, no network call, and no extra tokens.'
+  zh: '在 DeepSeek Harness 每条助手回复的页脚、时间之后显示本轮真实花费与今日累计：按会话日志里的用量和本地人民币价目表折算，不调计费接口、不联网、也不额外消耗 token。'
+# 可选：仓库内截图由 screenshots.json 声明，这里不用写。
+# 可选：发布 npm 后也不要手写 npm: 字段（会自动采集，手写会被校验拒绝）。
